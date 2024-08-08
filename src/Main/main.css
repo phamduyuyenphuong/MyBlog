@@ -1,0 +1,152 @@
+.main-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-header {
+    color: #fc6c85;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 230px;
+    background-image: url("../images/sky1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-header>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.main-header h1,
+.main-header h5 {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Handwriting", cursive;
+    text-align: left;
+}
+
+.main-header>div:nth-child(2) {
+    align-items: flex-start;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header>div>nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* Căn giữa nav */
+}
+
+.main-header>div nav ul {
+    list-style-type: none;
+    /* Loại bỏ dấu chấm danh sách */
+    padding: 0;
+    /* Loại bỏ padding */
+    margin: 0;
+    /* Loại bỏ margin */
+    display: flex;
+    /* Hiển thị danh sách theo hàng ngang */
+}
+
+.main-header>div nav ul li {
+    margin-left: 20px;
+    /* Khoảng cách giữa các liên kết */
+    display: inline;
+    /* Đảm bảo phần tử li là inline để nằm ngang */
+}
+
+.main-header>div nav ul li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    /* Đảm bảo liên kết có kích thước phù hợp */
+}
+
+
+.blog-left {
+    margin-top: 10px;
+    float: left;
+    width: 30%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-left img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.blog-left img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.blog-right {
+    float: right;
+    width: 70%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.blog-right>div {
+    background-color: #ffe4e1;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.blog-right>div>span {
+    color: #0ca6cb;
+    font-size: 25px;
+    font-family: "Lucida Handwriting", cursive;
+}
+.blog-buyer{
+    margin-bottom: 10px;
+}
+.blog-buyer,
+.blog-seller {
+    padding-left: 55px;
+    text-align: left;
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.blog-buyer ul li,
+.blog-seller ul li {
+    font-family: "Lucida Handwriting", cursive;
+    color: #00563f;
+}
+
+.main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
